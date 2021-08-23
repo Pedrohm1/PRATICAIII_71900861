@@ -27,14 +27,14 @@ public class Triangulo
       if ((c < a+b) && (b < c+a) && (a < c+b))
       {
          if ((a == b) && (b == c)){        
-            return Resposta.ESCALENO;       
+            return Resposta.EQUILATERO;       
          }
          else
          {
             if ((a != b) && (b != c) && (c != a)){
-               return Resposta.EQUILATERO;
-            }else{       
                return Resposta.ESCALENO;
+            }else{       
+               return Resposta.ISOCELES;
             }
          }
       }
